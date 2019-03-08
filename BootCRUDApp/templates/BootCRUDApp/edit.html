@@ -1,0 +1,11 @@
+{% extends 'BootCRUDApp/base.html' %}
+
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    {{ editForm.as_p}}
+    <button>submit</button>
+</form>
+
+{% endblock content %}
